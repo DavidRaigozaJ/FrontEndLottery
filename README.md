@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+
+## Check the deployment here 
+
+https://lingering-snowflake-1192.on.fleek.co/
+
+## This is the IPFS address
+
+https://ipfs.io/ipfs/QmVUWAoAgiKnicJLwbFL2b4rbp89C9Dd6At2nNyp7xnqz2
+
 
 ## Getting Started
 
