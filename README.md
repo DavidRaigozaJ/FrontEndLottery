@@ -1,6 +1,6 @@
 
 
-## Check the deployment here 
+## Check the deployment here, use Sepolia Testnet to interact!
 
 https://lingering-snowflake-1192.on.fleek.co/
 
