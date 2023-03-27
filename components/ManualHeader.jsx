@@ -38,11 +38,15 @@ export default function ManualHeader() {
     return(
     
     <div>
-        {account ? (<div>Connected to {account.slice(0,6)}...{account.length - 4}</div>
+        {account ? (<div>
+            
+            Connected to {account.slice(0,6)}...{account.length - 4}
+            
+            </div>
         ) : (
 
             //button component
-        <button 
+        <button  
 
         
         onClick={async () => {
@@ -57,7 +61,7 @@ export default function ManualHeader() {
                 Connect
                 </button>)}
         
-    </div>
+         </div>
     
     )
 }

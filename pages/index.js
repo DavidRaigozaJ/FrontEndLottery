@@ -9,7 +9,7 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Lotto Loco</title>
+                <title>Lotto-Mock-0</title>
                 <meta name="description" content="Lottery Dapp" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
@@ -19,7 +19,7 @@ export default function Home() {
             <Lottery/>
 
             {/* <ManualHeader/> */}
-            Hello!
+     
            {/**header / connect / nav*/}
         </div>
     )

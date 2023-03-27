@@ -93,11 +93,13 @@ export default function Lottery() {
     }
 
     return(
-        <div>
+        <div className="p-5">
             Hi From Lottery
             {raffleAddress ? (
-            <div>
-                <button onClick={async function() {
+            <div className="">
+                <button 
+                className="bg-blue-500 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded ml-auto"
+                onClick={async function() {
 
                     await enterRaffle({
                         onSuccess: handleSuccess,
@@ -105,11 +107,23 @@ export default function Lottery() {
 
                     })
                     
-                    }}>Enter Raffle!</button>
-
-                EntranceFee{ethers.utils.formatUnits(entranceFee, "ether")}ETH
-                number Of Players: {numberOfPlayers}
-                Recent Winner: {recentWinner}
+                    }}
+                    disabled={isLoading || isFetching}
+                    
+                    >
+                        {isLoading || isFetching ? (<div className="animate-spin spinner-border h-8 w8 border-b-2 rounded-full"></div>
+                        ) : (
+                        
+                        <div>EnterRaffle!!</div>
+                        
+                        )}
+                       
+                        
+                        </button>
+                
+                        <div>EntranceFee{ethers.utils.formatUnits(entranceFee, "ether")}ETH</div>
+                        <div>number Of Players: {numberOfPlayers}</div>
+                        <div>Recent Winner: {recentWinner}</div>
                 </div>
             ) : (
             <div>No Raffle Address</div>
